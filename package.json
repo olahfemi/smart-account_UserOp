@@ -22,7 +22,7 @@
     "@biconomy/common": "^3.1.0",
     "@biconomy/core-types": "^3.1.0",
     "@biconomy/paymaster": "^3.1.0",
-    "@biconom/modules":"^3.1.0",
+    "@biconomy/modules": "^3.1.0",
     "ethers": "5.7.2"
   }
 }
