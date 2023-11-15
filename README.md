@@ -1,7 +1,7 @@
 
 # Biconomy Quickstarter
 
-This Repository is used in the quickstart guide for the [Biconomy SDK](https://docs.biconomy.io/docs/quickstart) as well as the Node JS guides.
+This Repository is used in the quickstart guide for the [Biconomy SDK](https://docs.biconomy.io/quickstart) as well as the Node JS guides.
 
 This is a basic starter kit to create Node JS scripts with Typescript. It includes only a script for development and is meant for educational puproses. You will need additional scripts to optimize for production.
 
