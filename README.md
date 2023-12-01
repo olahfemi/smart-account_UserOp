@@ -1,12 +1,10 @@
 
-# Biconomy Quickstarter
+# Create a Smart Account and Perform a User Operation
 
-This Repository is used in the quickstart guide for the [Biconomy SDK](https://docs.biconomy.io/quickstart) as well as the Node JS guides.
-
-This is a basic starter kit to create Node JS scripts with Typescript. It includes only a script for development and is meant for educational puproses. You will need additional scripts to optimize for production.
+This repository contains a script that uses the [Biconomy SDK](https://docs.biconomy.io/quickstart) as well as Node.js and Typescript to create a smart account. It then performs a user operation by sending a native token.
 
 
-## Installation
+## Usage Instructions
 
 Clone this repository and then run
 
@@ -14,12 +12,23 @@ Clone this repository and then run
   yarn
 ```
 
-Alternatively you can use `npm` or `pnpm` if that suits you. 
+- Plug in an EOA you want to own the smart account by creating a ".env" file (you can duplicate the ".env.example" and rename it)
+- Assign the private key of the EOA to the PRIVATE_KEY variable your .env file (if you duplicated as suggested above)
+- Add the recipient address to the "to" parameter of the "transaction" variable in the "index.ts" file.
+- You will also need some native tokens to send. Get some Polygon Mumbai tokens [here](https://faucet.polygon.technology/) if you wish to use the network.
+- You can get a Bunler URL from the Biconomy dashboard 
 
-The main purpose of this repository is to serve as the starting point for the Biconomy SDK Quick Start guide. 
+When you run
 
+```bash
+  yarn dev
+```
+The script will print out your smart account address and try to send 0.1 of tokens to the recipient. However, because you smart account doesn't have any tokens, it will print out an error.
 
+- Get some Polygon Mumbai tokens [here](https://faucet.polygon.technology/) using your address, if you wish to use the network.
 
-## Pull requests welcome
+- Now run 
+```bash
+  yarn dev
+```
 
-Have any improvements to be made? Feel free to make a Pull Request! 
